@@ -13,6 +13,12 @@ class MyApp extends StatelessWidget {
     final wordPair = WordPair.random();
     return MaterialApp(
       title: 'Startup Name Generator',
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black,
+        )
+      ),
       home: RandomWords(),
     );
   }
